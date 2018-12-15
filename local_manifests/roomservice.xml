@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- You should probably let Roomservice deal with this unless you know what you are doing. -->
+<manifest>
+  <remote  name="github" fetch="https://github.com"/>
+  <remote  name="aosp" fetch="https://android.googlesource.com"/>  
+  <remove-project name="platform/external/wpa_supplicant_8" />
+  <remove-project name="platform/vendor/qcom-opensource/time-services" />
+  <remove-project name="platform/vendor/qcom-opensource/interfaces" />
+  <remove-project name="platform/hardware/nxp/nfc" />
+  <remove-project name="platform/vendor/qcom-opensource/dataservices" />
+  <project name="tomgus1/device-sony-suzu" path="device/sony/suzu" remote="github" revision="6300" />
+  <project name="tomgus1/android_device_sony_loire" path="device/sony/loire" remote="github" revision="6300" />
+  <project name="tomgus1/android_device_sony_common" path="device/sony/common" remote="github" revision="6300" />
+  <project name="tomgus1/device-sony-sepolicy" path="device/sony/sepolicy" remote="github" revision="6300" />
+  <project name="sonyxperiadev/kernel" path="kernel/sony/msm-4.9/kernel" remote="github" revision="aosp/LE.UM.2.3.2.r1.4" />
+  <project name="sonyxperiadev/kernel-defconfig" path="kernel/sony/msm-4.9/kernel/arch/arm64/configs/sony" remote="github" revision="aosp/LE.UM.2.3.2.r1.4" />
+  <project name="sonyxperiadev/camera" path="vendor/qcom/opensource/camera" remote="github" revision="aosp/LA.UM.6.4.r1" />
+  <project name="sonyxperiadev/QcRilAm" path="vendor/oss/qcrilam" remote="github" revision="master" />
+  <project name="platform/hardware/broadcom/libbt" path="hardware/broadcom/libbt" remote="caf" revision="refs/tags/android-9.0.0_r22" />
+  <project name="platform/hardware/broadcom/wlan" path="hardware/broadcom/wlan" remote="caf" revision="refs/tags/android-9.0.0_r22" />
+  <project name="tomgus1/android_hardware_qcom_audio" path="hardware/qcom/audio" remote="github" revision="pie-8998" />
+  <project name="tomgus1/hardware-qcom-display" path="hardware/qcom/display" remote="github" revision="pie-8998" />
+  <project name="SonyAosp/platform_hardware_qcom_gps_sdm845" path="hardware/qcom/gps" remote="github" revision="android-9.0" />
+  <project name="tomgus1/android_hardware_qcom_media" path="hardware/qcom/media" remote="github" revision="pie-8998" />
+  <project name="platform/hardware/qcom/msm8998" path="hardware/qcom/msm8998" remote="caf" revision="refs/tags/android-9.0.0_r22" />
+  <project name="sonyxperiadev/hardware-qcom-display" path="hardware/qcom/display/msmfb" remote="github" revision="aosp/LA.UM.6.3.r1" />
+  <project name="platform/hardware/qcom/sdm845/data/ipacfg-mgr" path="hardware/qcom/data/ipacfg-mgr/sdm845" remote="aosp" revision="master" />
+  <project name="sonyxperiadev/vendor-sony-oss-fingerprint" path="vendor/oss/fingerprint" remote="github" revision="master" />
+  <project name="sonyxperiadev/macaddrsetup" path="vendor/oss/macaddrsetup" remote="github" revision="master" />
+  <project name="sonyxperiadev/thermanager" path="vendor/oss/thermanager" remote="github" revision="master" />
+  <project name="sonyxperiadev/timekeep" path="vendor/oss/timekeep" remote="github" revision="master" />
+  <project name="platform/vendor/qcom-opensource/dataservices/" path="vendor/qcom/opensource/dataservices" remote="caf" revision="refs/tags/LA.UM.7.4.r1-04200-8x98.0" />
+  <project name="SonyAosp/platform_hardware_qcom_location" path="vendor/qcom/opensource/location" remote="github" revision="android-9.0" />
+  <project name="sonyxperiadev/vendor-broadcom-bt-fm" path="vendor/broadcom/bt-fm" remote="github" revision="master" />
+  <project name="sonyxperiadev/vendor-broadcom-wlan" path="vendor/broadcom/wlan" remote="github" revision="master" />
+  <project name="sonyxperiadev/vendor-nxp" path="vendor/nxp" remote="github" revision="master" />
+  <project name="NXPNFCProject/NXPNFCC_FW" path="vendor/nxp/NXPNFCC_FW" remote="github" revision="master" />
+  <project name="sonyxperiadev/packages_apps_ExtendedSettings" path="packages/apps/ExtendedSettings" remote="github" revision="master" />
+  <project name="platform/vendor/opensource/audio-kernel/" path="vendor/opensource/audio-kernel" remote="caf" revision="LE.UM.2.3.2.r1.5" />
+  <project name="sonyxperiadev/device-sony-common-init" path="hardware/sony/init" remote="github" revision="master" />
+  <project name="SonyAosp/platform_hardware_nxp_nfc" path="hardware/nxp/nfc" remote="github" revision="android-9.0" />
+  <project name="platform/vendor/qcom-opensource/interfaces" path="vendor/qcom/opensource/interfaces" remote="caf" revision="refs/tags/LA.UM.7.4.r1-04200-8x98.0" />
+  <project name="sonyxperiadev/vendor-qcom-opensource-time-services" path="vendor/qcom/opensource/time-services" remote="github" revision="master" />
+  <project name="platform/external/wpa_supplicant_8" path="external/wpa_supplicant_8" remote="caf" revision="refs/tags/android-9.0.0_r22" />
+</manifest>
