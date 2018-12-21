@@ -8,6 +8,11 @@
   <remove-project name="platform/vendor/qcom-opensource/interfaces" />
   <remove-project name="platform/hardware/nxp/nfc" />
   <remove-project name="platform/vendor/qcom-opensource/dataservices" />
+  <remove-project name="device/qcom/common" />
+  <remove-project name="platform/vendor/qcom-opensource/display-commonsys-intf" />
+  <remove-project name="kernel/msm-4.9" />
+  <remove-project name="platform/external/json-c" />
+  <remove-project name="platform/vendor/qcom-opensource/data-ipa-cfg-mgr" />
   <project name="tomgus1/device-sony-suzu" path="device/sony/suzu" remote="github" revision="6300" />
   <project name="tomgus1/android_device_sony_loire" path="device/sony/loire" remote="github" revision="6300" />
   <project name="tomgus1/android_device_sony_common" path="device/sony/common" remote="github" revision="6300" />
@@ -23,8 +28,6 @@
   <project name="SonyAosp/platform_hardware_qcom_gps_sdm845" path="hardware/qcom/gps" remote="github" revision="android-9.0" />
   <project name="tomgus1/android_hardware_qcom_media" path="hardware/qcom/media" remote="github" revision="pie-8998" />
   <project name="platform/hardware/qcom/msm8998" path="hardware/qcom/msm8998" remote="caf" revision="refs/tags/android-9.0.0_r22" />
-  <project name="sonyxperiadev/hardware-qcom-display" path="hardware/qcom/display/msmfb" remote="github" revision="aosp/LA.UM.6.3.r1" />
-  <project name="platform/hardware/qcom/sdm845/data/ipacfg-mgr" path="hardware/qcom/data/ipacfg-mgr/sdm845" remote="aosp" revision="master" />
   <project name="sonyxperiadev/vendor-sony-oss-fingerprint" path="vendor/oss/fingerprint" remote="github" revision="master" />
   <project name="sonyxperiadev/macaddrsetup" path="vendor/oss/macaddrsetup" remote="github" revision="master" />
   <project name="sonyxperiadev/thermanager" path="vendor/oss/thermanager" remote="github" revision="master" />
@@ -42,4 +45,11 @@
   <project name="platform/vendor/qcom-opensource/interfaces" path="vendor/qcom/opensource/interfaces" remote="caf" revision="refs/tags/LA.UM.7.4.r1-04200-8x98.0" />
   <project name="sonyxperiadev/vendor-qcom-opensource-time-services" path="vendor/qcom/opensource/time-services" remote="github" revision="master" />
   <project name="platform/external/wpa_supplicant_8" path="external/wpa_supplicant_8" remote="caf" revision="refs/tags/android-9.0.0_r22" />
+  <project name="sonyxperiadev/device-sony-kugo" path="device/sony/kugo" remote="github" revision="master" />
+  <project name="piecaf/android_device_qcom_common" path="device/qcom/common" remote="github" revision="p">
+    <copyfile dest="build.sh" src="build.sh"/>
+    <linkfile dest="vendor/qcom/build/tasks/generate_extra_images.mk" src="generate_extra_images.mk"/>
+    <linkfile dest="disregard/Android.mk" src="stop_scan.mk"/>
+  </project>
+  <project name="tomgus1/proprietary_vendor_qcom_sdclang-6.0_linux-x86_64" path="vendor/qcom/sdclang-6.0/linux-x86_64" remote="github" revision="pie" />
 </manifest>
