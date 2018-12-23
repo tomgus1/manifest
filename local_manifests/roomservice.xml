@@ -23,7 +23,7 @@
   <project name="sonyxperiadev/QcRilAm" path="vendor/oss/qcrilam" remote="github" revision="master" />
   <project name="platform/hardware/broadcom/libbt" path="hardware/broadcom/libbt" remote="caf" revision="refs/tags/android-9.0.0_r22" />
   <project name="platform/hardware/broadcom/wlan" path="hardware/broadcom/wlan" remote="caf" revision="refs/tags/android-9.0.0_r22" />
-  <project name="tomgus1/android_hardware_qcom_audio" path="hardware/qcom/audio" remote="github" revision="pie-8998" />
+  <project name="tomgus1/android_hardware_qcom_audio" path="hardware/qcom/audio" remote="github" revision="pie-aosp" />
   <project name="tomgus1/hardware-qcom-display" path="hardware/qcom/display" remote="github" revision="pie-8998" />
   <project name="SonyAosp/platform_hardware_qcom_gps_sdm845" path="hardware/qcom/gps" remote="github" revision="android-9.0" />
   <project name="tomgus1/android_hardware_qcom_media" path="hardware/qcom/media" remote="github" revision="pie-8998" />
